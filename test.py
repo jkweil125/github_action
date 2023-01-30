@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "https://github.com/jkweil125/github_action/blob/main/.github/workflows/learn-github-actions.yml/dispatches"
+url = "https://github.com/repos/jkweil125/github_action/actions/workflows/learn-github-actions.yaml"
 
 data = {
     'owner': 'jkweil125',
@@ -11,7 +11,7 @@ data = {
 }
 
 headers = {
-    'auth': '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'
+    'auth': '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'
 }
 
 response = requests.post(url,headers=headers,data=data)
