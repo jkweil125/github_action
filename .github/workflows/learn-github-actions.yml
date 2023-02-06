@@ -21,7 +21,7 @@ jobs:
       - run: |
           echo "Log level: $LEVEL"
           echo "Tags: $TAGS"
-          echo "{{ secrets.secret1 }}
+          echo "${{ secrets.secret1 }}"
         env:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
